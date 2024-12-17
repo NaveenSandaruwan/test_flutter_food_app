@@ -3,11 +3,13 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fitness/models/category_model.dart';
 import 'package:fitness/models/popular_categories.dart';
 import 'package:fitness/models/search_item_model.dart';
-// import 'package:fitness/models/search_item_model.dart';
 import 'item_info_page.dart';
 import 'package:fitness/components/category_section.dart';
 import 'package:fitness/components/recommendations_section.dart';
 import 'package:fitness/components/popular_section.dart';
+import 'package:fitness/services/popular_service.dart';
+import 'package:fitness/services/category_service.dart';
+import 'package:fitness/services/searchitem_service.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});

@@ -1,0 +1,58 @@
+### Get All Categories
+GET http://192.168.1.100:8080/api/categories
+Accept: application/json
+
+###
+GET http://192.168.8.156:8080/api/categories
+Accept: application/json
+
+### Get Category by ID
+GET http://localhost:8080/api/categories/1
+Accept: application/json
+
+###
+
+### Add Category
+POST http://localhost:8080/api/categories
+Content-Type: application/json
+
+{
+  "name": "Food 1",
+  "imagePath": "assets/food_1.jpg",
+  "backgroundColor": "#FFFFFF"
+}
+
+###
+
+### Update Category
+PUT http://localhost:8080/api/categories/1
+Content-Type: application/json
+
+{
+  "name": "Updated Food 1",
+  "imagePath": "assets/food_1.jpg",
+  "backgroundColor": "#FFFFFF"
+}
+
+###
+
+### Delete Category
+DELETE http://localhost:8080/api/categories/1
+
+###
+
+### Get All Popular Items
+GET http://localhost:8080/api/popular-items
+Accept: application/json
+
+###
+
+### Get All Recommendations
+GET http://localhost:8080/api/recommendations
+Accept: application/json
+
+###
+
+### Get All Search Items
+GET http://localhost:8080/api/search-items
+Accept: application/json
